@@ -1,5 +1,7 @@
 <?php
 $gdriveid = $_GET['url'];
-header ("Location: 'https://drive.google.com/uc?id='.'$gdriveid'");
+$gdrive= "https://drive.google.com/uc?id=";
+$url = $gdrive.$gdriveid;
+header ("Location: $url ");
 exit;
 ?>
